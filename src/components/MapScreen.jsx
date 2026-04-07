@@ -16,7 +16,7 @@ export default function MapScreen({ deviceView = 'desktop' }) {
   }, [fetchLotsData]);
 
   return (
-    <div className="w-full h-screen bg-[#D8E2E1] flex justify-center overflow-hidden">
+    <div className="w-full h-[100dvh] bg-[#D8E2E1] flex justify-center overflow-hidden relative">
       <div className="relative w-full h-full flex flex-col transition-all duration-700 ease-in-out">
         <TransformWrapper
           key={loading ? 'loading' : 'ready'}
@@ -58,7 +58,7 @@ export default function MapScreen({ deviceView = 'desktop' }) {
             )}
             
             {/* Bottom Menu taking full width */}
-            <div className="pointer-events-auto w-full">
+            <div className="pointer-events-auto w-full max-h-[50vh] overflow-y-auto">
               <BottomMenu />
             </div>
           </div>

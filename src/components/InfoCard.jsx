@@ -49,14 +49,14 @@ export default function InfoCard() {
   };
 
   return (
-    <div className="w-[320px] md:w-[400px] bg-[#2f2f31f2] backdrop-blur-md rounded-l-[5px] rounded-r-none flex flex-col p-[26px] md:p-[30px] pt-[20px] md:pt-[24px] pointer-events-auto border border-white/5 border-r-0 animate-in fade-in zoom-in-95 duration-200">
+    <div className="w-full sm:w-[300px] md:w-[350px] bg-[#2f2f31f2] backdrop-blur-md rounded-l-[5px] sm:rounded-r-none rounded-b-none flex flex-col p-4 sm:p-5 md:p-6 pt-3 sm:pt-4 md:pt-5 pointer-events-auto border border-white/5 sm:border-r-0 animate-in fade-in zoom-in-95 duration-200">
       
       {/* Header */}
-      <div className="flex justify-between items-start mb-8 md:mb-8">
-        <div className="flex flex-col gap-1 items-start">
-           <span className="text-[44px] md:text-[52px] text-white font-antonio leading-none tracking-tight">{lText}</span>
-           <div className="flex items-center gap-4 w-full">
-              <span className="text-[22px] md:text-[24px] text-white font-open-sans-cond font-light opacity-90 leading-none">{mText}</span>
+      <div className="flex justify-between items-start mb-6 md:mb-6">
+        <div className="flex flex-col gap-0.5 items-start">
+           <span className="text-[38px] md:text-[44px] text-white font-antonio leading-none tracking-tight">{lText}</span>
+           <div className="flex items-center gap-3 w-full">
+              <span className="text-[18px] md:text-[20px] text-white font-open-sans-cond font-light opacity-90 leading-none">{mText}</span>
               <div className="flex-1 h-[1px] bg-white/20 mt-1" />
            </div>
         </div>
@@ -70,46 +70,46 @@ export default function InfoCard() {
       </div>
 
       {/* Body */}
-      <div className="flex flex-col gap-[20px] md:gap-[25px] pt-2">
+      <div className="flex flex-col gap-3 md:gap-4 pt-1">
          
-         <div className="flex items-center gap-4">
-             <span className="text-white font-open-sans-cond font-bold text-[13px] md:text-[16px] opacity-100 tracking-[0.75px] w-[70px] md:w-[95px]">Tamaño</span>
-             <div className="bg-gradient-to-r from-white/10 to-transparent px-[16px] py-[3px] md:py-[5px] rounded-[6px] flex items-baseline gap-1 relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] z-10">{lot.Superficie}</span>
-                <span className="text-white font-open-sans-cond font-light text-[10px] md:text-[13px] tracking-[0.6px] z-10">m<span className="text-[7px] md:text-[9px] align-top">2</span></span>
+         <div className="flex items-center gap-3">
+             <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Tamaño</span>
+             <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-baseline gap-1 relative overflow-hidden flex-1">
+                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Superficie}</span>
+                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">m<span className="text-[7px] md:text-[8px] align-top">2</span></span>
              </div>
          </div>
 
-         <div className="flex items-center gap-4">
-             <span className="text-white font-open-sans-cond font-bold text-[13px] md:text-[16px] opacity-100 tracking-[0.75px] w-[70px] md:w-[95px]">Uso</span>
-             <div className="bg-gradient-to-r from-white/10 to-transparent px-[16px] py-[3px] md:py-[5px] rounded-[6px] flex items-center gap-3 relative overflow-hidden flex-1">
-                  <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] capitalize z-10">{lot.Uso || '---'}</span>
+         <div className="flex items-center gap-3">
+             <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Uso</span>
+             <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-center gap-2 relative overflow-hidden flex-1">
+                  <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] capitalize z-10">{lot.Uso || '---'}</span>
                   {renderUsoIcon(lot.Uso)}
              </div>
          </div>
 
-         <div className="flex items-center gap-4">
-             <span className="text-white font-open-sans-cond font-bold text-[13px] md:text-[16px] opacity-100 tracking-[0.75px] w-[70px] md:w-[95px]">Orientación</span>
-             <div className="bg-gradient-to-r from-white/10 to-transparent px-[16px] py-[3px] md:py-[5px] rounded-[6px] flex relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] z-10">{lot.Orientacion || '---'}</span>
+         <div className="flex items-center gap-3">
+             <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Orientación</span>
+             <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex relative overflow-hidden flex-1">
+                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Orientacion || '---'}</span>
              </div>
          </div>
 
-         <div className="flex items-center gap-4">
-             <span className="text-white font-open-sans-cond font-bold text-[13px] md:text-[16px] opacity-100 tracking-[0.75px] w-[70px] md:w-[95px]">Contado</span>
-             <div className="bg-gradient-to-r from-white/10 to-transparent px-[16px] py-[3px] md:py-[5px] rounded-[6px] flex items-baseline gap-2 relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] z-10">{lot.Precio}</span>
-                <span className="text-white font-open-sans-cond font-light text-[10px] md:text-[13px] tracking-[0.6px] z-10">USD</span>
+         <div className="flex items-center gap-3">
+             <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Contado</span>
+             <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-baseline gap-2 relative overflow-hidden flex-1">
+                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio || '---'}</span>
+                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
              </div>
          </div>
 
-         <div className="flex items-center gap-4">
-             <span className="text-white font-open-sans-cond font-bold text-[13px] md:text-[16px] opacity-100 tracking-[0.75px] w-[70px] md:w-[95px]">Financiado</span>
-             <div className="bg-gradient-to-r from-white/10 to-transparent px-[16px] py-[3px] md:py-[5px] rounded-[6px] flex items-baseline gap-2 relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] z-10">{lot.Precio_financiado || '0'}</span>
-                <span className="text-white font-open-sans-cond font-light text-[10px] md:text-[13px] tracking-[0.6px] z-10">USD</span>
-                <span className="text-white font-open-sans-cond font-light text-[14px] md:text-[17px] tracking-[0.75px] z-10 ml-2">{lot.Cuota || '0'}</span>
-                <span className="text-white font-open-sans-cond font-light text-[10px] md:text-[13px] tracking-[0.6px] z-10">CUOTAS</span>
+         <div className="flex items-center gap-3">
+             <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Financiado</span>
+             <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-baseline gap-2 relative overflow-hidden flex-1">
+                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio_financiado || '0'}</span>
+                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
+                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10 ml-2">{lot.Cuota || '0'}</span>
+                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10 uppercase">vto</span>
              </div>
          </div>
       </div>
