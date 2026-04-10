@@ -55,11 +55,11 @@ export default function Tutorial() {
          </div>
          
          {/* Logo Proyecto Norte - Acoplado al bloque gris */}
-         <img 
-           src="/logo_proyecto_norte.svg" 
-           alt="Proyecto Norte" 
-           className="absolute bottom-2 right-2 sm:right-4 w-14 sm:w-20 md:w-22 lg:w-35 z-50 pointer-events-none opacity-90" 
-         />
+          <img 
+            src="/logo_proyecto_norte.svg" 
+            alt="Proyecto Norte" 
+            className="absolute bottom-0 right-0 sm:right-0 w-14 sm:w-20 md:w-22 lg:w-35 z-50 pointer-events-none opacity-90" 
+          />
       </div>
     </div>
   );
