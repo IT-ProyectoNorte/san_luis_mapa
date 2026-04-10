@@ -10,55 +10,55 @@ export default function Tutorial() {
     <div className="w-full min-h-screen flex flex-col overflow-y-auto bg-[#191919] select-none text-center">
       
       {/* Top Banner - Dark Grey */}
-      <div className="bg-[#2f2f31] flex flex-col items-center justify-center py-4 sm:py-8 md:py-16 px-4 shrink-0 shadow-lg z-10 gap-3 sm:gap-8 md:gap-14">
-        <h2 className="text-white text-[20px] sm:text-[28px] md:text-[34px] font-antonio leading-none tracking-wide text-center">Cómo usar el mapa?</h2>
+      <div className="bg-[#2f2f31] flex flex-col items-center justify-center py-3 sm:py-8 md:py-16 px-3 shrink-0 shadow-lg z-10 gap-2 sm:gap-8 md:gap-14">
+        <h2 className="text-white text-[18px] sm:text-[28px] md:text-[34px] font-antonio leading-none tracking-wide text-center">Cómo usar el mapa?</h2>
         
         {/* Instructions */}
-        <div className="flex flex-col gap-3 sm:gap-6 md:gap-8 items-center justify-center max-w-[900px] sm:flex-row sm:gap-8 md:gap-16">
+        <div className="flex flex-col gap-2 sm:gap-6 md:gap-8 items-center justify-center max-w-[900px] sm:flex-row sm:gap-8 md:gap-16">
           
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_mover.svg')", WebkitMaskImage: "url('/tutorial_mover.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
-            <p className="font-open-sans-cond font-bold text-[12px] sm:text-[16px] md:text-[18px] text-white">Arrastra para moverte por el mapa.</p>
+            <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_mover.svg')", WebkitMaskImage: "url('/tutorial_mover.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
+            <p className="font-open-sans-cond font-bold text-[11px] sm:text-[16px] md:text-[18px] text-white">Arrastra para moverte por el mapa.</p>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_clic.svg')", WebkitMaskImage: "url('/tutorial_clic.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
-            <p className="font-open-sans-cond font-bold text-[12px] sm:text-[16px] md:text-[18px] text-white">Toca un lote para ver su información.</p>
+            <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_clic.svg')", WebkitMaskImage: "url('/tutorial_clic.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
+            <p className="font-open-sans-cond font-bold text-[11px] sm:text-[16px] md:text-[18px] text-white">Toca un lote para ver su información.</p>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_iconos-2.svg')", WebkitMaskImage: "url('/tutorial_iconos-2.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
-            <p className="font-open-sans-cond font-bold text-[12px] sm:text-[16px] md:text-[18px] text-white">Usa la lupa para acercar o alejar.</p>
+            <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 shrink-0 bg-[#e2d6be]" style={{ maskImage: "url('/tutorial_iconos-2.svg')", WebkitMaskImage: "url('/tutorial_iconos-2.svg')", maskSize: "contain", WebkitMaskSize: "contain", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", maskPosition: "center", WebkitMaskPosition: "center" }} />
+            <p className="font-open-sans-cond font-bold text-[11px] sm:text-[16px] md:text-[18px] text-white">Usa la lupa para acercar o alejar.</p>
           </div>
 
         </div>
       </div>
 
       {/* Middle Banner - Beige Arena */}
-      <div className="bg-[#e2d6be] flex flex-col items-center justify-center py-4 sm:py-8 md:py-16 px-4 shrink-0 shadow-inner z-0 gap-3 sm:gap-6 md:gap-12">
-        <h2 className="text-[#2f2f31] text-[18px] sm:text-[24px] md:text-[30px] font-antonio leading-none tracking-wide text-center">¡Estás listo para explorar!</h2>
+      <div className="bg-[#e2d6be] flex flex-col items-center justify-center py-3 sm:py-8 md:py-16 px-3 shrink-0 shadow-inner z-0 gap-2 sm:gap-6 md:gap-12">
+        <h2 className="text-[#2f2f31] text-[16px] sm:text-[24px] md:text-[30px] font-antonio leading-none tracking-wide text-center">¡Estás listo para explorar!</h2>
         
         {/* Continue Button matching new palette */}
         <button 
           onClick={dismissTutorial}
-          className="flex items-center gap-2 sm:gap-4 bg-[#2f2f31] hover:bg-[#191919] text-[#e2d6be] font-bold text-xs sm:text-sm md:text-lg py-2.5 sm:py-4 md:py-5 px-5 sm:px-8 md:px-12 rounded-full shadow-xl transition-all hover:scale-105 tracking-widest cursor-pointer mt-1"
+          className="flex items-center gap-1.5 sm:gap-4 bg-[#2f2f31] hover:bg-[#191919] text-[#e2d6be] font-bold text-[10px] sm:text-sm md:text-lg py-2 sm:py-4 md:py-5 px-4 sm:px-8 md:px-12 rounded-full shadow-xl transition-all hover:scale-105 tracking-widest cursor-pointer mt-1"
         >
-          <Map size={18} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
+          <Map size={16} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
           VER EL MAPA
         </button>
       </div>
 
       {/* Bottom Area - Very Dark */}
-      <div className="bg-[#191919] flex-1 flex flex-col items-center justify-center py-3 sm:py-6 px-4 relative min-h-[80px] sm:min-h-[140px] md:min-h-[180px]">
-         <div className="brightness-0 invert opacity-90 mb-1">
-           <Logo width="w-8 sm:w-12 md:w-14 lg:w-16" />
+      <div className="bg-[#191919] flex-1 flex flex-col items-center justify-center py-2 sm:py-6 px-3 relative min-h-[60px] sm:min-h-[140px] md:min-h-[180px]">
+         <div className="brightness-0 invert opacity-90 mb-0.5">
+           <Logo width="w-6 sm:w-12 md:w-14 lg:w-16" />
          </div>
          
          {/* Logo Proyecto Norte - Acoplado al bloque gris */}
           <img 
             src="/logo_proyecto_norte.svg" 
             alt="Proyecto Norte" 
-            className="absolute bottom-0 right-0 sm:right-0 w-10 sm:w-20 md:w-22 lg:w-35 z-50 pointer-events-none opacity-90" 
+            className="absolute bottom-0 right-0 sm:right-0 w-8 sm:w-20 md:w-22 lg:w-35 z-50 pointer-events-none opacity-90" 
           />
       </div>
     </div>
