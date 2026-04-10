@@ -17,7 +17,7 @@ export default function BottomMenu() {
             <div className="bg-white flex items-center justify-center rounded-lg w-7 h-8 sm:w-8 sm:h-9 md:w-9 md:h-10 lg:w-9 lg:h-11">
                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3 md:w-3 lg:w-[13px] lg:h-[13px] rounded-full bg-[#B0B6D5]" />
             </div>
-            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">RESIDENCIAL</span>
+            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-normal text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">RESIDENCIAL</span>
          </div>
 
          {/* Mixto */}
@@ -25,7 +25,7 @@ export default function BottomMenu() {
             <div className="bg-white flex items-center justify-center rounded-lg w-7 h-8 sm:w-8 sm:h-9 md:w-9 md:h-10 lg:w-9 lg:h-11">
                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3 md:w-3 lg:w-[13px] lg:h-[13px] rounded-full bg-[#C0B391]" />
             </div>
-            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">MIXTO</span>
+            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-normal text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">MIXTO</span>
          </div>
          
          {/* Comercial */}
@@ -33,7 +33,7 @@ export default function BottomMenu() {
             <div className="bg-white flex items-center justify-center rounded-lg w-7 h-8 sm:w-8 sm:h-9 md:w-9 md:h-10 lg:w-9 lg:h-11">
                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3 md:w-3 lg:w-[13px] lg:h-[13px] rounded-full bg-[#A48671]" />
             </div>
-            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">COMERCIAL</span>
+            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-normal text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">COMERCIAL</span>
          </div>
 
          {/* No Disponible */}
@@ -41,7 +41,7 @@ export default function BottomMenu() {
             <div className="bg-white flex items-center justify-center rounded-lg w-7 h-8 sm:w-8 sm:h-9 md:w-9 md:h-10 lg:w-9 lg:h-11">
                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3 md:w-3 lg:w-[13px] lg:h-[13px] rounded-full bg-[#6C6C6C]" />
             </div>
-            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">NO DISP.</span>
+            <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] font-normal text-white font-open-sans-cond tracking-tight leading-none whitespace-nowrap">NO DISP.</span>
          </div>
 
        </div>
