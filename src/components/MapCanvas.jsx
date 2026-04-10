@@ -63,9 +63,9 @@ export default function MapCanvas() {
       };
 
       const estadoColors = {
-        vendida: { outer: '#888888', inner: '#6A6A6A', number: '#FFFFFF' }, // Gris oscuro
-        bloqueada: { outer: '#D3D3D3', inner: '#BDBDBD', number: '#555555' }, // Gris claro
-        'no disponible': { outer: '#D3D3D3', inner: '#BDBDBD', number: '#555555' }, // Gris claro
+        vendida: { outer: '#8f8f8f', inner: '#636363', number: '#FFFFFF' },
+        bloqueada: { outer: '#8f8f8f', inner: '#636363', number: '#FFFFFF' },
+        'no disponible': { outer: '#8f8f8f', inner: '#636363', number: '#FFFFFF' },
       };
 
       // Limpieza de valor estado

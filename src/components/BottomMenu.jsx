@@ -33,19 +33,12 @@ export default function BottomMenu() {
              <span className="text-[6px] sm:text-[7px] md:text-[9px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tighter leading-none whitespace-nowrap">COMERCIAL</span>
           </div>
 
-          <div className="flex flex-col items-center gap-0.5 shrink-0">
-             <div className="bg-white flex items-center justify-center rounded-[2px] w-[20px] h-[12px] sm:w-[24px] sm:h-[14px] md:w-[28px] md:h-[18px]">
-                <div className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] rounded-full bg-[#888888]" />
-             </div>
-             <span className="text-[6px] sm:text-[7px] md:text-[9px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tighter leading-none whitespace-nowrap">VENDIDO</span>
-          </div>
-
-          <div className="flex flex-col items-center gap-0.5 shrink-0">
-             <div className="bg-white flex items-center justify-center rounded-[2px] w-[20px] h-[12px] sm:w-[24px] sm:h-[14px] md:w-[28px] md:h-[18px]">
-                <div className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] rounded-full bg-[#D3D3D3]" />
-             </div>
-             <span className="text-[6px] sm:text-[7px] md:text-[9px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tighter leading-none whitespace-nowrap">NO DISP.</span>
-          </div>
+           <div className="flex flex-col items-center gap-0.5 shrink-0">
+              <div className="bg-white flex items-center justify-center rounded-[2px] w-[20px] h-[12px] sm:w-[24px] sm:h-[14px] md:w-[28px] md:h-[18px]">
+                 <div className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] rounded-full bg-[#8f8f8f]" />
+              </div>
+              <span className="text-[6px] sm:text-[7px] md:text-[9px] lg:text-[11px] font-bold text-white font-open-sans-cond tracking-tighter leading-none whitespace-nowrap">NO DISP.</span>
+           </div>
 
        </div>
 
