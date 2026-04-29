@@ -9,6 +9,20 @@ jobs:
   wake-up:
     runs-on: ubuntu-latest
     steps:
-      - uses: wilhelmsendk/wake-up-supabase@v1
-        with:
-          projects: ${{ secrets.SUPABASE_PROJECTS_JSON }}
+      - name: Wake up Supabase project
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          echo "Checking Supabase project status..."
+          RESPONSE=$(curl -s -w "%{http_code}" -o /dev/null \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            "$SUPABASE_URL/rest/v1/san_luis?select=ID&limit=1")
+          
+          if [ "$RESPONSE" = "200" ]; then
+            echo "✓ Database is active"
+          else
+            echo "✗ Database returned status: $RESPONSE"
+            exit 1
+          fi
