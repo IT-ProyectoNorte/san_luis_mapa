@@ -29,14 +29,21 @@ export const useStore = create((set, get) => ({
   
   fetchLotsData: async () => {
     set({ loading: true, error: null });
+    console.log('🔄 Fetching data from Supabase...');
+    console.log('URL:', import.meta.env.VITE_SUPABASE_URL);
+    
     try {
       const { data, error } = await supabase
         .from('san_luis')
-        .select('*');
+        .select('*')
+        .limit(5);
 
+      console.log('Response:', { data, error });
+      
       if (error) {
-        console.error('Error fetching from "san luis" table:', error.message);
-        set({ lotsData: [], loading: false, error: 'No se pudieron cargar los datos del loteo.' });
+        console.error('❌ Error fetching from "san luis" table:', error.message);
+        console.error('Error details:', error);
+        set({ lotsData: [], loading: false, error: `Error: ${error.message}` });
         return;
       }
       
@@ -45,19 +52,26 @@ export const useStore = create((set, get) => ({
         console.log(`✅ Loaded ${data.length} rows from "san luis" table.`);
         console.log('Columns found:', columns);
         
-        const expected = ['ID', 'Superficie', 'Precio', 'Orientacion', 'Manzana', 'Lote', 'Estado', 'Uso'];
-        const missing = expected.filter(col => !columns.includes(col));
-        if (missing.length > 0) {
-          console.warn('⚠️ Table "san luis" is missing these expected columns:', missing);
+        // Fetch all data
+        const { data: allData, error: allError } = await supabase
+          .from('san_luis')
+          .select('*');
+          
+        if (allError) {
+          console.error('Error fetching all data:', allError);
+          set({ lotsData: data, loading: false, error: null });
+          return;
         }
-
-        set({ lotsData: data, loading: false, error: null });
+        
+        console.log(`✅ Total rows: ${allData?.length || 0}`);
+        set({ lotsData: allData || data, loading: false, error: null });
       } else {
         console.warn('⚠️ Table "san luis" returned 0 rows.');
-        set({ lotsData: [], loading: false, error: 'No hay datos disponibles.' });
+        set({ lotsData: [], loading: false, error: 'No hay datos en la base de datos.' });
       }
     } catch (err) {
-      console.error('Unexpected error fetching from "san luis":', err.message);
+      console.error('❌ Unexpected error fetching from "san luis":', err.message);
+      console.error(err);
       set({ lotsData: [], loading: false, error: 'Error de conexión. Intenta recargar la página.' });
     }
   }
