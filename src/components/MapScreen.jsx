@@ -58,8 +58,10 @@ export default function MapScreen({ deviceView = 'desktop' }) {
             )}
             
             {/* Bottom Menu taking full width */}
-            <div className="pointer-events-auto w-full max-h-[50vh] overflow-y-auto">
-              <BottomMenu />
+            <div className="pointer-events-none w-full max-h-[50vh] overflow-y-auto">
+              <div className="pointer-events-auto">
+                <BottomMenu />
+              </div>
             </div>
           </div>
         </TransformWrapper>
