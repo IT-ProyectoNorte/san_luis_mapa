@@ -2345,6 +2345,31 @@
 <path id="Vector 21_9" d="M1098.59 129.309L1113.47 127.357L1117.36 157.06L1102.29 157.434L1098.59 129.309Z" fill="#B0B6D5"/>
 <path id="21_5" d="M1107.26 139.917L1102.43 139.917L1102.43 139.052L1104.28 137.177C1104.63 136.813 1104.93 136.499 1105.16 136.235C1105.39 135.968 1105.56 135.716 1105.67 135.478C1105.79 135.24 1105.84 134.982 1105.84 134.702C1105.84 134.357 1105.74 134.096 1105.55 133.92C1105.35 133.741 1105.09 133.652 1104.76 133.652C1104.45 133.652 1104.16 133.714 1103.9 133.837C1103.64 133.958 1103.37 134.13 1103.09 134.355L1102.46 133.598C1102.66 133.429 1102.87 133.274 1103.09 133.134C1103.32 132.994 1103.58 132.884 1103.86 132.802C1104.14 132.718 1104.46 132.675 1104.81 132.675C1105.27 132.675 1105.66 132.757 1105.99 132.919C1106.31 133.079 1106.57 133.302 1106.74 133.588C1106.92 133.875 1107.01 134.208 1107.01 134.589C1107.01 134.973 1106.93 135.328 1106.78 135.654C1106.63 135.979 1106.41 136.302 1106.13 136.621C1105.84 136.936 1105.51 137.28 1105.12 137.651L1103.88 138.857L1103.88 138.911L1107.26 138.911L1107.26 139.917ZM1111.52 139.917L1110.37 139.917L1110.37 135.322C1110.37 135.169 1110.37 135.016 1110.37 134.863C1110.38 134.71 1110.38 134.56 1110.38 134.414C1110.39 134.267 1110.4 134.127 1110.41 133.994C1110.34 134.069 1110.26 134.15 1110.16 134.238C1110.06 134.326 1109.95 134.417 1109.84 134.511L1109.02 135.166L1108.45 134.438L1110.57 132.778L1111.52 132.778L1111.52 139.917Z" fill="black"/>
 </g>
+<g id="lotes/M29_L22/Disponible">
+<path id="Vector_22a" d="M1138.59 118.75L1116.25 121.38L1121.01 162.84L1143.35 161.55Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
+<path id="Vector_22b" d="M1120.83 126.72L1135.81 124.73L1139.70 155.77L1124.32 156.15Z" fill="#B0B6D5"/>
+<text id="22_M29" x="1129.8" y="141.1" font-size="7.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" dominant-baseline="middle" fill="black">22</text>
+</g>
+<g id="lotes/M29_L23/Disponible">
+<path id="Vector_23a" d="M1160.93 116.12L1138.59 118.75L1143.35 161.55L1165.69 160.26Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
+<path id="Vector_23b" d="M1143.17 124.09L1158.15 122.10L1162.04 154.48L1146.66 154.86Z" fill="#B0B6D5"/>
+<text id="23_M29" x="1152.1" y="139.2" font-size="7.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" dominant-baseline="middle" fill="black">23</text>
+</g>
+<g id="lotes/M29_L24/Disponible">
+<path id="Vector_24a" d="M1183.27 113.49L1160.93 116.12L1165.69 160.26L1188.03 158.97Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
+<path id="Vector_24b" d="M1165.51 121.46L1180.49 119.47L1184.38 153.19L1169.00 153.57Z" fill="#B0B6D5"/>
+<text id="24_M29" x="1174.5" y="137.2" font-size="7.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" dominant-baseline="middle" fill="black">24</text>
+</g>
+<g id="lotes/M29_L25/Disponible">
+<path id="Vector_25a" d="M1205.61 110.86L1183.27 113.49L1188.03 158.97L1210.37 157.68Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
+<path id="Vector_25b" d="M1187.85 118.83L1202.83 116.84L1206.72 151.90L1191.34 152.28Z" fill="#B0B6D5"/>
+<text id="25_M29" x="1196.8" y="135.2" font-size="7.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" dominant-baseline="middle" fill="black">25</text>
+</g>
+<g id="lotes/M29_L1/Disponible">
+<path id="Vector_1a" d="M1227.95 108.23L1205.61 110.86L1210.37 157.68L1232.71 156.39Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
+<path id="Vector_1b" d="M1210.19 116.20L1225.17 114.21L1229.06 150.61L1213.68 150.99Z" fill="#B0B6D5"/>
+<text id="1_M29" x="1219.2" y="133.3" font-size="7.5" font-family="Helvetica,Arial,sans-serif" text-anchor="middle" dominant-baseline="middle" fill="black">1</text>
+</g>
 <g id="lotes/M29_L8/Disponible">
 <path id="Vector 18_11" d="M1143.52 204.615H1121.26V163.041L1143.52 161.471V204.615Z" fill="#D6D8EA" stroke="black" stroke-width="0.2" stroke-linejoin="round"/>
 <path id="Vector 21_10" d="M1124.82 198.877H1139.95V167.969L1124.82 169.611V198.877Z" fill="#B0B6D5"/>
