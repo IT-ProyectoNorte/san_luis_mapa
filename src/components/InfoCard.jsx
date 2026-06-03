@@ -31,6 +31,9 @@ export default function InfoCard() {
   const mText = `M ${lot.Manzana || fallbackManzana}`;
   const lText = `Lote ${lot.Lote || fallbackLote}`;
 
+  const estado = (lot.Estado || '').toLowerCase().trim();
+  const isNoDisponible = ['bloqueada', 'bloqueado', 'reservada', 'reservado', 'vendida', 'vendido', 'no disponible'].includes(estado);
+
   // Pill reference color helper
   const renderUsoIcon = (uso) => {
     const usoColors = {
@@ -98,18 +101,30 @@ export default function InfoCard() {
          <div className="flex items-center gap-3">
              <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Contado</span>
              <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-baseline gap-2 relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio || '---'}</span>
-                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
+                {isNoDisponible ? (
+                  <span className="text-white/60 font-open-sans-cond font-light text-[12px] md:text-[14px] tracking-[0.75px] z-10 uppercase">No disponible</span>
+                ) : (
+                  <>
+                    <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio || '---'}</span>
+                    <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
+                  </>
+                )}
              </div>
          </div>
 
          <div className="flex items-center gap-3">
              <span className="text-white font-open-sans-cond font-bold text-[12px] md:text-[14px] opacity-100 tracking-[0.75px] w-[60px] md:w-[85px]">Financiado</span>
              <div className="bg-gradient-to-r from-white/10 to-transparent px-3 py-1 rounded-[4px] flex items-baseline gap-2 relative overflow-hidden flex-1">
-                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio_financiado || '0'}</span>
-                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
-                <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10 ml-2">{lot.Cuota || '0'}</span>
-                <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10 uppercase">vto</span>
+                {isNoDisponible ? (
+                  <span className="text-white/60 font-open-sans-cond font-light text-[12px] md:text-[14px] tracking-[0.75px] z-10 uppercase">No disponible</span>
+                ) : (
+                  <>
+                    <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10">{lot.Precio_financiado || '0'}</span>
+                    <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10">USD</span>
+                    <span className="text-white font-open-sans-cond font-light text-[13px] md:text-[16px] tracking-[0.75px] z-10 ml-2">{lot.Cuota || '0'}</span>
+                    <span className="text-white font-open-sans-cond font-light text-[9px] md:text-[12px] tracking-[0.6px] z-10 uppercase">vto</span>
+                  </>
+                )}
              </div>
          </div>
       </div>

@@ -138,15 +138,20 @@ export default function MapCanvas() {
     let target = e.target;
     if (!svgContainerRef.current || !svgContainerRef.current.contains(target)) return;
 
-    const lotGroup = target.closest('g[id]');
-    if (lotGroup && /^lotes\/M\d+_L\d+\//i.test(lotGroup.id)) {
-      const match = lotGroup.id.match(/M\d+_L\d+/i);
-      if (match) {
-        setSelectedLotId(match[0]);
-        return;
+    // Traverse all ancestor <g> elements (not just closest) to handle
+    // lots where paths are wrapped in a nested <g id="Group..."> element
+    let el = target;
+    while (el && el !== svgContainerRef.current) {
+      if (el.tagName === 'g' && el.id && /^lotes\/M\d+_L\d+\//i.test(el.id)) {
+        const match = el.id.match(/M\d+_L\d+/i);
+        if (match) {
+          setSelectedLotId(match[0]);
+          return;
+        }
       }
+      el = el.parentElement;
     }
-    
+
     setSelectedLotId(null);
   };
 
